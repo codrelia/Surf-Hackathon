@@ -44,6 +44,15 @@ private extension KeyBoardViewController {
             let alert = UIAlertController(title: "Ошибка", message: "Поле не должно быть пустым", preferredStyle: .alert)
             alert.addAction(okButton)
             self.present(alert, animated: true)
+            return
+        }
+        for i in textCode.text! {
+            if (textCode.text != "1") && (textCode.text != "2") && (textCode.text != "3") && (textCode.text != "4") && (textCode.text != "5") && (textCode.text != "6") && (textCode.text != "7") && (textCode.text != "8") && (textCode.text != "9") && (textCode.text != "0") {
+                let okButton = UIAlertAction(title: "Ok", style: .default)
+                let alert = UIAlertController(title: "Ошибка", message: "Поле должно содержать только цифры", preferredStyle: .alert)
+                alert.addAction(okButton)
+                self.present(alert, animated: true)
+            }
         }
     }
 }
