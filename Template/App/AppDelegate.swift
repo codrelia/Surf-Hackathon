@@ -9,7 +9,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var timer: Timer?
+    
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
@@ -23,15 +24,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 private extension AppDelegate {
 
     func launchApp() {
-        initializeRootView()
+        
+        runLaunchScreen()
+        Thread.sleep(forTimeInterval: 1)
+        initializeNavigationController()
         let initialModule = LocalStorage.isOnboardingFinished ? MainViewController() : OnboardingViewController()
         UIApplication.setInitialModule(initialModule)
     }
 
-    func initializeRootView() {
+    func initializeNavigationController() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UIViewController()
+        let viewcontroller = MainViewController()
+        let navi = UINavigationController(rootViewController: viewcontroller)
+        window?.rootViewController = navi
         window?.makeKeyAndVisible()
     }
-
+    func runLaunchScreen() {
+        let launchScreenViewController = UIStoryboard(name: "LaunchScreen", bundle: .main).instantiateInitialViewController()
+        window?.rootViewController = launchScreenViewController
+    }
+    
+    
+    
 }

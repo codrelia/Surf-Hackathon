@@ -23,6 +23,8 @@
 		0AB7695E29B0D6B6002119A0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7695C29B0D6B6002119A0 /* MainViewController.swift */; };
 		0AB7695F29B0D6B6002119A0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7695D29B0D6B6002119A0 /* MainViewController.xib */; };
 		0AB7696429B12B43002119A0 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7696329B12B43002119A0 /* PermissionManager.swift */; };
+		82E5967529B353D300A8977F /* KeyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E5967329B353D300A8977F /* KeyBoardViewController.swift */; };
+		82E5967629B353D300A8977F /* KeyBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E5967429B353D300A8977F /* KeyBoardViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		0AB7695C29B0D6B6002119A0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0AB7695D29B0D6B6002119A0 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		0AB7696329B12B43002119A0 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		82E5967329B353D300A8977F /* KeyBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardViewController.swift; sourceTree = "<group>"; };
+		82E5967429B353D300A8977F /* KeyBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyBoardViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		0AB7693729B0AA58002119A0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				82E5966D29B3433200A8977F /* KeyBoardEntering */,
 				0AB7695B29B0D5A3002119A0 /* Main */,
 				0AB7694E29B0BFA7002119A0 /* Onboarding */,
 			);
@@ -185,6 +190,15 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		82E5966D29B3433200A8977F /* KeyBoardEntering */ = {
+			isa = PBXGroup;
+			children = (
+				82E5967329B353D300A8977F /* KeyBoardViewController.swift */,
+				82E5967429B353D300A8977F /* KeyBoardViewController.xib */,
+			);
+			path = KeyBoardEntering;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB7692B29AFF321002119A0 /* LaunchScreen.storyboard in Resources */,
+				82E5967629B353D300A8977F /* KeyBoardViewController.xib in Resources */,
 				0AB7695F29B0D6B6002119A0 /* MainViewController.xib in Resources */,
 				0AB7694529B0BB89002119A0 /* Localizable.strings in Resources */,
 				0AB7695729B0C06F002119A0 /* OnboardingPageViewController.xib in Resources */,
@@ -268,6 +283,7 @@
 				0AB7696429B12B43002119A0 /* PermissionManager.swift in Sources */,
 				0AB7695E29B0D6B6002119A0 /* MainViewController.swift in Sources */,
 				0AB7695629B0C06F002119A0 /* OnboardingPageViewController.swift in Sources */,
+				82E5967529B353D300A8977F /* KeyBoardViewController.swift in Sources */,
 				0AB7694229B0BABA002119A0 /* OnboardingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
