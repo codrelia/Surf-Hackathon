@@ -24,8 +24,15 @@ class KeyBoardViewController: UIViewController {
         confirmButton.titleLabel?.font = Fonts.buttonFont
         confirmButton.layer.cornerRadius = 12.0
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        textCode.resignFirstResponder()
+    }
 
     @IBAction func tapOnActionButton(_ sender: Any) {
+        view.endEditing(true)
+        textCode.resignFirstResponder()
         let barcode = textCode.text ?? ""
         navigationController?.pushViewController(DetailViewController(), animated: true)
     }
