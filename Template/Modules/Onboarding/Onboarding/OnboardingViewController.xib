@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Template" customModuleProvider="target">
             <connections>
+                <outlet property="closeButton" destination="pz4-Do-JSg" id="z4c-V9-leQ"/>
                 <outlet property="nextPageButton" destination="4pv-v3-Yrp" id="kMs-iN-e4Z"/>
                 <outlet property="pagesView" destination="FnF-03-Cij" id="cQw-Kp-8lu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -25,7 +26,7 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="687"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pz4-Do-JSg" userLabel="Close Button">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pz4-Do-JSg" userLabel="Close Button">
                     <rect key="frame" x="345" y="75" width="32" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="32" id="hVa-Hc-Esj"/>

@@ -20,10 +20,17 @@ class MainViewController: UIViewController {
 private extension MainViewController {
 
     func setupButtons() {
-        [scanButton, manualEnterButton].forEach { $0?.configuration = .filled() }
         scanButton.setTitle(.localized(key: "Main.scanCode"), for: .normal)
         manualEnterButton.setTitle(.localized(key: "Main.manualEnter"), for: .normal)
         
+        scanButton.backgroundColor = Colors.buttonColor
+        scanButton.tintColor = Colors.titleButtonColor
+        scanButton.titleLabel?.font = Fonts.buttonFont
+        scanButton.layer.cornerRadius = 12.0
+        manualEnterButton.backgroundColor = Colors.buttonColor
+        manualEnterButton.tintColor = Colors.titleButtonColor
+        manualEnterButton.titleLabel?.font = Fonts.buttonFont
+        manualEnterButton.layer.cornerRadius = 12.0
     }
 
     func showNoPermissionAlert() {

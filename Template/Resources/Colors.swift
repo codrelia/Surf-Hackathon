@@ -11,4 +11,5 @@ import UIKit
 enum Colors {
     static let buttonColor = UIColor(named: "buttonColor")
     static let titleButtonColor = UIColor(named: "titleButtonColor")
+    static let titleColor = UIColor(named: "titleColor")
 }

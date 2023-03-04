@@ -31,9 +31,10 @@ private extension OnboardingPageViewController {
 
     func setupTextLabel() {
         textLabel.numberOfLines = 0
-        textLabel.font = .systemFont(ofSize: 32, weight: .regular)
-        textLabel.textColor = .secondaryLabel
+        textLabel.font = .systemFont(ofSize: 32, weight: .light)
+        textLabel.textColor = Colors.titleColor
         textLabel.text = model.text
+        textLabel.textAlignment = .center
     }
 
 }

@@ -4,8 +4,8 @@
 */
 
 "Onboarding.page.1" = "Это приложение для февральского хакатона в Surf";
-"Onboarding.page.2" = "мы предоставим вам всю имеющуюся информацию о ней";
-"Onboarding.page.3" = "Тут вы можете сканировать баркод интересующей вас лампочки";
+"Onboarding.page.2" = "Мы предоставим Вам всю имеющуюся информацию о ней";
+"Onboarding.page.3" = "Тут вы можете сканировать баркод интересующей Вас лампочки";
 "Onboarding.page.4" = "Вы можете ввести баркод вручную или использовать камеру для сканирования";
 
 "Onboarding.nextPage" = "Дальше";
@@ -17,3 +17,7 @@
 "PermissionAlert.title" = "У приложения нет доступа к камере";
 "PermissionAlert.message" = "Перейдите в настройки, чтобы предоставить доступ";
 "PermissionAlert.ok" = "OK";
+
+"DetailScreen.characteristic" = "Характеристика";
+"DetailScreen.measurable" = "Измерено";
+"DetailScreen.unmeasurable" = "Заявлено";

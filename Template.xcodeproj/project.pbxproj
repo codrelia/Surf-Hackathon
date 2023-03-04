@@ -27,6 +27,12 @@
 		3B50C73929B34271002C04EE /* LaunchAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C73729B34271002C04EE /* LaunchAnimationController.swift */; };
 		3B50C73C29B350B9002C04EE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C73B29B350B9002C04EE /* Colors.swift */; };
 		3B50C73E29B35220002C04EE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C73D29B35220002C04EE /* Fonts.swift */; };
+		3B50C74229B36392002C04EE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C74029B36392002C04EE /* DetailViewController.swift */; };
+		3B50C74329B36392002C04EE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B50C74129B36392002C04EE /* DetailViewController.xib */; };
+		3B50C74729B3662C002C04EE /* MainInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C74529B3662C002C04EE /* MainInfoTableViewCell.swift */; };
+		3B50C74829B3662C002C04EE /* MainInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B50C74629B3662C002C04EE /* MainInfoTableViewCell.xib */; };
+		3B50C74D29B36CA7002C04EE /* CharacteristicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C74B29B36CA7002C04EE /* CharacteristicsTableViewCell.swift */; };
+		3B50C74E29B36CA7002C04EE /* CharacteristicsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B50C74C29B36CA7002C04EE /* CharacteristicsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,12 @@
 		3B50C73729B34271002C04EE /* LaunchAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchAnimationController.swift; sourceTree = "<group>"; };
 		3B50C73B29B350B9002C04EE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		3B50C73D29B35220002C04EE /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		3B50C74029B36392002C04EE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3B50C74129B36392002C04EE /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		3B50C74529B3662C002C04EE /* MainInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoTableViewCell.swift; sourceTree = "<group>"; };
+		3B50C74629B3662C002C04EE /* MainInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainInfoTableViewCell.xib; sourceTree = "<group>"; };
+		3B50C74B29B36CA7002C04EE /* CharacteristicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicsTableViewCell.swift; sourceTree = "<group>"; };
+		3B50C74C29B36CA7002C04EE /* CharacteristicsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacteristicsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +135,7 @@
 		0AB7693729B0AA58002119A0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3B50C73F29B3637A002C04EE /* Detail */,
 				3B50C73529B34256002C04EE /* Splash */,
 				0AB7695B29B0D5A3002119A0 /* Main */,
 				0AB7694E29B0BFA7002119A0 /* Onboarding */,
@@ -205,6 +218,43 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		3B50C73F29B3637A002C04EE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3B50C74429B365FE002C04EE /* Cells */,
+				3B50C74029B36392002C04EE /* DetailViewController.swift */,
+				3B50C74129B36392002C04EE /* DetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3B50C74429B365FE002C04EE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3B50C74A29B36C8B002C04EE /* Characteristics */,
+				3B50C74929B36C7D002C04EE /* MainInfo */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3B50C74929B36C7D002C04EE /* MainInfo */ = {
+			isa = PBXGroup;
+			children = (
+				3B50C74529B3662C002C04EE /* MainInfoTableViewCell.swift */,
+				3B50C74629B3662C002C04EE /* MainInfoTableViewCell.xib */,
+			);
+			path = MainInfo;
+			sourceTree = "<group>";
+		};
+		3B50C74A29B36C8B002C04EE /* Characteristics */ = {
+			isa = PBXGroup;
+			children = (
+				3B50C74B29B36CA7002C04EE /* CharacteristicsTableViewCell.swift */,
+				3B50C74C29B36CA7002C04EE /* CharacteristicsTableViewCell.xib */,
+			);
+			path = Characteristics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,9 +315,12 @@
 			files = (
 				0AB7692B29AFF321002119A0 /* LaunchScreen.storyboard in Resources */,
 				0AB7695F29B0D6B6002119A0 /* MainViewController.xib in Resources */,
+				3B50C74329B36392002C04EE /* DetailViewController.xib in Resources */,
+				3B50C74E29B36CA7002C04EE /* CharacteristicsTableViewCell.xib in Resources */,
 				0AB7694529B0BB89002119A0 /* Localizable.strings in Resources */,
 				0AB7695729B0C06F002119A0 /* OnboardingPageViewController.xib in Resources */,
 				0AB7692829AFF321002119A0 /* Assets.xcassets in Resources */,
+				3B50C74829B3662C002C04EE /* MainInfoTableViewCell.xib in Resources */,
 				0AB7693C29B0AA91002119A0 /* OnboardingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,10 +340,13 @@
 				0AB7694A29B0BD8F002119A0 /* String.swift in Sources */,
 				0AB7695A29B0C607002119A0 /* Array.swift in Sources */,
 				0AB7696429B12B43002119A0 /* PermissionManager.swift in Sources */,
+				3B50C74D29B36CA7002C04EE /* CharacteristicsTableViewCell.swift in Sources */,
 				0AB7695E29B0D6B6002119A0 /* MainViewController.swift in Sources */,
 				3B50C73C29B350B9002C04EE /* Colors.swift in Sources */,
+				3B50C74729B3662C002C04EE /* MainInfoTableViewCell.swift in Sources */,
 				3B50C73829B34271002C04EE /* LaunchAnimationView.swift in Sources */,
 				3B50C73929B34271002C04EE /* LaunchAnimationController.swift in Sources */,
+				3B50C74229B36392002C04EE /* DetailViewController.swift in Sources */,
 				0AB7695629B0C06F002119A0 /* OnboardingPageViewController.swift in Sources */,
 				0AB7694229B0BABA002119A0 /* OnboardingPage.swift in Sources */,
 			);
@@ -440,7 +496,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +529,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

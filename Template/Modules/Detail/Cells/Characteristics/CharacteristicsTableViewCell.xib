@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="CharacteristicsTableViewCell" customModule="Template" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="435" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4y-LH-vsZ">
+                        <rect key="frame" x="16.000000000000004" y="8" width="41.333333333333343" height="100"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQg-UK-WJX">
+                        <rect key="frame" x="196.66666666666666" y="47.666666666666664" width="42" height="20.999999999999993"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFO-U8-ted">
+                        <rect key="frame" x="377" y="8" width="42" height="100"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uFO-U8-ted" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="8nY-8H-vMy"/>
+                    <constraint firstItem="rQg-UK-WJX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YCt-QD-Yj0"/>
+                    <constraint firstAttribute="trailing" secondItem="uFO-U8-ted" secondAttribute="trailing" constant="16" id="Yzh-c2-ElB"/>
+                    <constraint firstItem="uFO-U8-ted" firstAttribute="centerY" secondItem="rQg-UK-WJX" secondAttribute="centerY" id="aqd-uI-b5s"/>
+                    <constraint firstItem="uFO-U8-ted" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rQg-UK-WJX" secondAttribute="trailing" constant="8" id="ehn-kz-eW3"/>
+                    <constraint firstItem="rQg-UK-WJX" firstAttribute="centerY" secondItem="g4y-LH-vsZ" secondAttribute="centerY" id="hG5-Ho-vc2"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="g4y-LH-vsZ" secondAttribute="bottom" constant="8" id="qbM-NQ-K5Y"/>
+                    <constraint firstItem="g4y-LH-vsZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="uia-Vj-VP4"/>
+                    <constraint firstItem="rQg-UK-WJX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="g4y-LH-vsZ" secondAttribute="trailing" constant="8" id="ull-QO-dlx"/>
+                    <constraint firstItem="rQg-UK-WJX" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="wwG-BI-UnR"/>
+                    <constraint firstItem="g4y-LH-vsZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="xUi-Xe-OQa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="characteristicLabel" destination="g4y-LH-vsZ" id="qlc-V3-nTZ"/>
+                <outlet property="measurableLabel" destination="rQg-UK-WJX" id="O2O-3x-Djh"/>
+                <outlet property="unmeasurableLabel" destination="uFO-U8-ted" id="OmM-t3-QWV"/>
+            </connections>
+            <point key="canvasLocation" x="214.50381679389312" y="12.67605633802817"/>
+        </tableViewCell>
+    </objects>
+</document>

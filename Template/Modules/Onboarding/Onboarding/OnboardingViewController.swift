@@ -9,7 +9,8 @@ class OnboardingViewController: UIViewController {
 
     @IBOutlet private var pagesView: UIView!
     @IBOutlet private var nextPageButton: UIButton!
-
+    @IBOutlet private weak var closeButton: UIButton!
+    
     private var pageController: UIPageViewController?
     private var childControllers: [UIViewController] = []
 
@@ -20,6 +21,7 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         setupPageController()
         setupNextPageButton()
+        setupCloseButton()
     }
 
 }
@@ -74,9 +76,18 @@ private extension OnboardingViewController {
         nextPageButton.backgroundColor = Colors.buttonColor
         nextPageButton.tintColor = Colors.titleButtonColor
         nextPageButton.titleLabel?.font = Fonts.buttonFont
-        nextPageButton.titleLabel?.font = Fonts.buttonFont
+        nextPageButton.layer.cornerRadius = 12.0
         
         updateNextPageButton()
+    }
+    
+    func setupCloseButton() {
+        let image = UIImage(named: "xmark")
+        closeButton.setImage(image, for: .normal)
+        closeButton.imageEdgeInsets = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
+        closeButton.tintColor = Colors.titleButtonColor
+        closeButton.backgroundColor = Colors.buttonColor
+        closeButton.layer.cornerRadius = 16
     }
 
     func updateNextPageButton() {
@@ -114,5 +125,7 @@ private extension OnboardingViewController {
     @IBAction func handleClosePressed() {
         finishOnboarding()
     }
+    
+    
 
 }
