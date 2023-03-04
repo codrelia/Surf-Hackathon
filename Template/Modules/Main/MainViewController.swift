@@ -52,7 +52,10 @@ private extension MainViewController {
     }
 
     @IBAction func handleManualEnterPressed() {
-        // TODO: - открыть экран ввода кода с клавиатуры
+        show(KeyBoardViewController(), sender: nil)
+        let keyBoardVC = UIViewController(nibName: "KeyBoardViewController", bundle: nil)
+        navigationController?.pushViewController(keyBoardVC, animated: true)
+
     }
 
 }
