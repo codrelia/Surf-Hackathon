@@ -21,24 +21,30 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PSu-Ab-vlE">
-                    <rect key="frame" x="15" y="436" width="384" height="34"/>
+                    <rect key="frame" x="15" y="344" width="384" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textAction:" destination="-1" eventType="editingDidEnd" id="r5o-VS-LsD"/>
+                    </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOI-Ik-AFQ">
-                    <rect key="frame" x="173.5" y="493" width="67" height="31"/>
+                    <rect key="frame" x="173.5" y="401" width="67" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="SED-Xe-r6w"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="PSu-Ab-vlE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="300" id="1RB-Wa-zoS"/>
                 <constraint firstItem="FOI-Ik-AFQ" firstAttribute="top" secondItem="PSu-Ab-vlE" secondAttribute="bottom" constant="23" id="AXc-Se-sqS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PSu-Ab-vlE" secondAttribute="trailing" constant="15" id="G0h-52-7zE"/>
                 <constraint firstItem="PSu-Ab-vlE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="RYm-Kq-hrh"/>
                 <constraint firstItem="FOI-Ik-AFQ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="VQw-cP-kKf"/>
-                <constraint firstItem="PSu-Ab-vlE" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="VgH-EB-L26"/>
                 <constraint firstItem="PSu-Ab-vlE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="dKc-Jw-ze0"/>
             </constraints>
             <point key="canvasLocation" x="58" y="99"/>
