@@ -8,20 +8,30 @@
 import UIKit
 
 class CharacteristicsTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var characteristicLabel: UILabel!
-    @IBOutlet weak var measurableLabel: UILabel!
     
-    @IBOutlet weak var unmeasurableLabel: UILabel!
+    @IBOutlet private weak var characteristicLabel: UILabel!
+    @IBOutlet private weak var measurableLabel: UILabel!
+    @IBOutlet private weak var unmeasurableLabel: UILabel!
+    
+    var characteristic = "" {
+        didSet {
+            characteristicLabel.text = characteristic
+        }
+    }
+    
+    var measurable = "" {
+        didSet {
+            measurableLabel.text = measurable
+        }
+    }
+    
+    var unmeasurable = "" {
+        didSet {
+            unmeasurableLabel.text = unmeasurable
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }
