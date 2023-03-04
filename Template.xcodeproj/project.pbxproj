@@ -25,6 +25,7 @@
 		0AB7696429B12B43002119A0 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7696329B12B43002119A0 /* PermissionManager.swift */; };
 		82E5967529B353D300A8977F /* KeyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E5967329B353D300A8977F /* KeyBoardViewController.swift */; };
 		82E5967629B353D300A8977F /* KeyBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E5967429B353D300A8977F /* KeyBoardViewController.xib */; };
+		82E5967929B38A0800A8977F /* CameraFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E5967829B38A0800A8977F /* CameraFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		0AB7696329B12B43002119A0 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
 		82E5967329B353D300A8977F /* KeyBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardViewController.swift; sourceTree = "<group>"; };
 		82E5967429B353D300A8977F /* KeyBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyBoardViewController.xib; sourceTree = "<group>"; };
+		82E5967829B38A0800A8977F /* CameraFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		0AB7693729B0AA58002119A0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				82E5967729B389F200A8977F /* CameraModule */,
 				82E5966D29B3433200A8977F /* KeyBoardEntering */,
 				0AB7695B29B0D5A3002119A0 /* Main */,
 				0AB7694E29B0BFA7002119A0 /* Onboarding */,
@@ -199,6 +202,14 @@
 			path = KeyBoardEntering;
 			sourceTree = "<group>";
 		};
+		82E5967729B389F200A8977F /* CameraModule */ = {
+			isa = PBXGroup;
+			children = (
+				82E5967829B38A0800A8977F /* CameraFile.swift */,
+			);
+			path = CameraModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB7693F29B0ABAA002119A0 /* UIApplication.swift in Sources */,
+				82E5967929B38A0800A8977F /* CameraFile.swift in Sources */,
 				0AB7691F29AFF320002119A0 /* AppDelegate.swift in Sources */,
 				0AB7693B29B0AA91002119A0 /* OnboardingViewController.swift in Sources */,
 				0AB7693629B0A7D8002119A0 /* LocalStorage.swift in Sources */,
