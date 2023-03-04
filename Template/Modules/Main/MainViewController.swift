@@ -13,6 +13,16 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButtons()
+        
+        let model = ModelDetail()
+        model.takeRequest(header: "4690601027856") { result in
+            switch result {
+            case .success(let info):
+                print(info.model)
+            case .failure(_):
+                print("error")
+            }
+        }
     }
 
 }

@@ -7,8 +7,24 @@ final class ModelDetail {
         }
     }
     
-    func takeRequest() {
-        
+    enum URLs {
+        static let barcode = "http://event.surfstudio.ru:8082/led/barcode/"
+    }
+    
+    func takeRequest(header: String, completion: @escaping (Result<Info, Error>) -> ()) {
+        guard let url = URL(string: URLs.barcode + header) else {
+            return
+        }
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                completion(.failure(error!))
+                return
+            }
+            guard let parsed = try? JSONDecoder().decode(Info.self, from: data) else {
+                return
+            }
+            completion(.success(parsed))
+        }.resume()
     }
 }
 
