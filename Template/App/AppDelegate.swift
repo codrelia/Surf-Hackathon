@@ -24,8 +24,7 @@ private extension AppDelegate {
 
     func launchApp() {
         initializeRootView()
-        let initialModule = LocalStorage.isOnboardingFinished ? MainViewController() : OnboardingViewController()
-        UIApplication.setInitialModule(initialModule)
+        UIApplication.setInitialModule(LaunchAnimationController())
     }
 
     func initializeRootView() {

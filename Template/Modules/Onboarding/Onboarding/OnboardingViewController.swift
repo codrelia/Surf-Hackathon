@@ -71,7 +71,11 @@ private extension OnboardingViewController {
     }
 
     func setupNextPageButton() {
-        nextPageButton.configuration = .filled()
+        nextPageButton.backgroundColor = Colors.buttonColor
+        nextPageButton.tintColor = Colors.titleButtonColor
+        nextPageButton.titleLabel?.font = Fonts.buttonFont
+        nextPageButton.titleLabel?.font = Fonts.buttonFont
+        
         updateNextPageButton()
     }
 
@@ -83,9 +87,9 @@ private extension OnboardingViewController {
 
     func finishOnboarding() {
         LocalStorage.isOnboardingFinished = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            UIApplication.setInitialModule(MainViewController())
-        }
+        let vc = MainViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
     }
 
 }
@@ -108,7 +112,7 @@ private extension OnboardingViewController {
     }
 
     @IBAction func handleClosePressed() {
-        exit(0)
+        finishOnboarding()
     }
 
 }

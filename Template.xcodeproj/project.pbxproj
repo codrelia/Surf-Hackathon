@@ -23,6 +23,10 @@
 		0AB7695E29B0D6B6002119A0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7695C29B0D6B6002119A0 /* MainViewController.swift */; };
 		0AB7695F29B0D6B6002119A0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7695D29B0D6B6002119A0 /* MainViewController.xib */; };
 		0AB7696429B12B43002119A0 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7696329B12B43002119A0 /* PermissionManager.swift */; };
+		3B50C73829B34271002C04EE /* LaunchAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C73629B34271002C04EE /* LaunchAnimationView.swift */; };
+		3B50C73929B34271002C04EE /* LaunchAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C73729B34271002C04EE /* LaunchAnimationController.swift */; };
+		3B50C73C29B350B9002C04EE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C73B29B350B9002C04EE /* Colors.swift */; };
+		3B50C73E29B35220002C04EE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C73D29B35220002C04EE /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		0AB7695C29B0D6B6002119A0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0AB7695D29B0D6B6002119A0 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		0AB7696329B12B43002119A0 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		3B50C73629B34271002C04EE /* LaunchAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchAnimationView.swift; sourceTree = "<group>"; };
+		3B50C73729B34271002C04EE /* LaunchAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchAnimationController.swift; sourceTree = "<group>"; };
+		3B50C73B29B350B9002C04EE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3B50C73D29B35220002C04EE /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,7 @@
 		0AB7693729B0AA58002119A0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3B50C73529B34256002C04EE /* Splash */,
 				0AB7695B29B0D5A3002119A0 /* Main */,
 				0AB7694E29B0BFA7002119A0 /* Onboarding */,
 			);
@@ -153,6 +162,8 @@
 			children = (
 				0AB7692729AFF321002119A0 /* Assets.xcassets */,
 				0AB7694429B0BB89002119A0 /* Localizable.strings */,
+				3B50C73B29B350B9002C04EE /* Colors.swift */,
+				3B50C73D29B35220002C04EE /* Fonts.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -183,6 +194,15 @@
 				0AB7695D29B0D6B6002119A0 /* MainViewController.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		3B50C73529B34256002C04EE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				3B50C73729B34271002C04EE /* LaunchAnimationController.swift */,
+				3B50C73629B34271002C04EE /* LaunchAnimationView.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B50C73E29B35220002C04EE /* Fonts.swift in Sources */,
 				0AB7693F29B0ABAA002119A0 /* UIApplication.swift in Sources */,
 				0AB7691F29AFF320002119A0 /* AppDelegate.swift in Sources */,
 				0AB7693B29B0AA91002119A0 /* OnboardingViewController.swift in Sources */,
@@ -267,6 +288,9 @@
 				0AB7695A29B0C607002119A0 /* Array.swift in Sources */,
 				0AB7696429B12B43002119A0 /* PermissionManager.swift in Sources */,
 				0AB7695E29B0D6B6002119A0 /* MainViewController.swift in Sources */,
+				3B50C73C29B350B9002C04EE /* Colors.swift in Sources */,
+				3B50C73829B34271002C04EE /* LaunchAnimationView.swift in Sources */,
+				3B50C73929B34271002C04EE /* LaunchAnimationController.swift in Sources */,
 				0AB7695629B0C06F002119A0 /* OnboardingPageViewController.swift in Sources */,
 				0AB7694229B0BABA002119A0 /* OnboardingPage.swift in Sources */,
 			);
