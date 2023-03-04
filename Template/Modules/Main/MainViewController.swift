@@ -13,16 +13,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButtons()
-        
-        let model = ModelDetail()
-        model.takeRequest(header: "4690601027856") { result in
-            switch result {
-            case .success(let info):
-                print(info.model)
-            case .failure(_):
-                print("error")
-            }
-        }
     }
 
 }
@@ -69,7 +59,7 @@ private extension MainViewController {
     }
 
     @IBAction func handleManualEnterPressed() {
-        // TODO: - открыть экран ввода кода с клавиатуры
+        navigationController?.pushViewController(KeyBoardViewController(), animated: true)
     }
 
 }

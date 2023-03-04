@@ -98,7 +98,7 @@ private extension OnboardingViewController {
 
     func finishOnboarding() {
         LocalStorage.isOnboardingFinished = true
-        let vc = MainViewController()
+        let vc = UINavigationController(rootViewController: MainViewController())
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
     }

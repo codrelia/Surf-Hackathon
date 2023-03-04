@@ -34,6 +34,10 @@
 		3B50C74D29B36CA7002C04EE /* CharacteristicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C74B29B36CA7002C04EE /* CharacteristicsTableViewCell.swift */; };
 		3B50C74E29B36CA7002C04EE /* CharacteristicsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B50C74C29B36CA7002C04EE /* CharacteristicsTableViewCell.xib */; };
 		3B50C75029B3703A002C04EE /* ModelDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C74F29B3703A002C04EE /* ModelDetail.swift */; };
+		3B50C75429B37D68002C04EE /* KeyBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B50C75229B37D68002C04EE /* KeyBoardViewController.xib */; };
+		3B50C75529B37D68002C04EE /* KeyBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C75329B37D68002C04EE /* KeyBoardViewController.swift */; };
+		3B50C75929B3814B002C04EE /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C75829B3814B002C04EE /* UIImageView.swift */; };
+		3B50C75B29B38167002C04EE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50C75A29B38167002C04EE /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 		3B50C74B29B36CA7002C04EE /* CharacteristicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicsTableViewCell.swift; sourceTree = "<group>"; };
 		3B50C74C29B36CA7002C04EE /* CharacteristicsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacteristicsTableViewCell.xib; sourceTree = "<group>"; };
 		3B50C74F29B3703A002C04EE /* ModelDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetail.swift; sourceTree = "<group>"; };
+		3B50C75229B37D68002C04EE /* KeyBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyBoardViewController.xib; sourceTree = "<group>"; };
+		3B50C75329B37D68002C04EE /* KeyBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBoardViewController.swift; sourceTree = "<group>"; };
+		3B50C75829B3814B002C04EE /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		3B50C75A29B38167002C04EE /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 		0AB7693429B0A6E2002119A0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3B50C75A29B38167002C04EE /* ImageLoader.swift */,
 				0AB7693529B0A7D8002119A0 /* LocalStorage.swift */,
 				0AB7696329B12B43002119A0 /* PermissionManager.swift */,
 			);
@@ -137,6 +146,7 @@
 		0AB7693729B0AA58002119A0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3B50C75129B37D68002C04EE /* KeyBoardEntering */,
 				3B50C73F29B3637A002C04EE /* Detail */,
 				3B50C73529B34256002C04EE /* Splash */,
 				0AB7695B29B0D5A3002119A0 /* Main */,
@@ -160,6 +170,7 @@
 				0AB7693E29B0ABAA002119A0 /* UIApplication.swift */,
 				0AB7694929B0BD8F002119A0 /* String.swift */,
 				0AB7695929B0C607002119A0 /* Array.swift */,
+				3B50C75829B3814B002C04EE /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -258,6 +269,15 @@
 			path = Characteristics;
 			sourceTree = "<group>";
 		};
+		3B50C75129B37D68002C04EE /* KeyBoardEntering */ = {
+			isa = PBXGroup;
+			children = (
+				3B50C75229B37D68002C04EE /* KeyBoardViewController.xib */,
+				3B50C75329B37D68002C04EE /* KeyBoardViewController.swift */,
+			);
+			path = KeyBoardEntering;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB7692B29AFF321002119A0 /* LaunchScreen.storyboard in Resources */,
+				3B50C75429B37D68002C04EE /* KeyBoardViewController.xib in Resources */,
 				0AB7695F29B0D6B6002119A0 /* MainViewController.xib in Resources */,
 				3B50C74329B36392002C04EE /* DetailViewController.xib in Resources */,
 				3B50C74E29B36CA7002C04EE /* CharacteristicsTableViewCell.xib in Resources */,
@@ -344,11 +365,14 @@
 				0AB7695A29B0C607002119A0 /* Array.swift in Sources */,
 				0AB7696429B12B43002119A0 /* PermissionManager.swift in Sources */,
 				3B50C74D29B36CA7002C04EE /* CharacteristicsTableViewCell.swift in Sources */,
+				3B50C75529B37D68002C04EE /* KeyBoardViewController.swift in Sources */,
 				0AB7695E29B0D6B6002119A0 /* MainViewController.swift in Sources */,
 				3B50C75029B3703A002C04EE /* ModelDetail.swift in Sources */,
 				3B50C73C29B350B9002C04EE /* Colors.swift in Sources */,
 				3B50C74729B3662C002C04EE /* MainInfoTableViewCell.swift in Sources */,
+				3B50C75B29B38167002C04EE /* ImageLoader.swift in Sources */,
 				3B50C73829B34271002C04EE /* LaunchAnimationView.swift in Sources */,
+				3B50C75929B3814B002C04EE /* UIImageView.swift in Sources */,
 				3B50C73929B34271002C04EE /* LaunchAnimationController.swift in Sources */,
 				3B50C74229B36392002C04EE /* DetailViewController.swift in Sources */,
 				0AB7695629B0C06F002119A0 /* OnboardingPageViewController.swift in Sources */,

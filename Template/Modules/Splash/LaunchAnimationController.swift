@@ -21,7 +21,7 @@ final class LaunchAnimationController: UIViewController {
         launchAnimationView.startAnimation()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-            let vc = LocalStorage.isOnboardingFinished ? MainViewController() : OnboardingViewController()
+            let vc = LocalStorage.isOnboardingFinished ? UINavigationController(rootViewController: MainViewController())  : OnboardingViewController()
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
         }
