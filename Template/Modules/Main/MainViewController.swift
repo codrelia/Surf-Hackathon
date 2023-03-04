@@ -52,10 +52,7 @@ private extension MainViewController {
     }
 
     @IBAction func handleManualEnterPressed() {
-        show(KeyBoardViewController(), sender: nil)
-        let keyBoardVC = UIViewController(nibName: "KeyBoardViewController", bundle: nil)
-        navigationController?.pushViewController(keyBoardVC, animated: true)
-
+        navigationController?.pushViewController(KeyBoardViewController(), animated: true)
     }
 
 }

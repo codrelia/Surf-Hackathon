@@ -29,7 +29,7 @@ private extension AppDelegate {
         Thread.sleep(forTimeInterval: 1)
         initializeNavigationController()
         let initialModule = LocalStorage.isOnboardingFinished ? MainViewController() : OnboardingViewController()
-        UIApplication.setInitialModule(initialModule)
+//        UIApplication.setInitialModule(initialModule)
     }
 
     func initializeNavigationController() {
