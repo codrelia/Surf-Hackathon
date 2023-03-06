@@ -2,7 +2,7 @@ import UIKit
 
 class MainInfoTableViewCell: UITableViewCell {
 
-    @IBOutlet private weak var lampImageView: UIImageView!
+    @IBOutlet weak var lampImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var ratingLabel: UILabel!
     @IBOutlet private weak var сharacteristicLabel: UILabel!
@@ -17,7 +17,7 @@ class MainInfoTableViewCell: UITableViewCell {
     
     var rating: Double = 0.0 {
         didSet {
-            ratingLabel.text = "\(rating)"
+            ratingLabel.text = String(format: "%.1f", rating)
         }
     }
     

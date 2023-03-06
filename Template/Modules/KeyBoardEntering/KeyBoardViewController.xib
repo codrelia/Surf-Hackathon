@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyBoardViewController" customModule="Template" customModuleProvider="target">
             <connections>
                 <outlet property="confirmButton" destination="6Hc-fT-gHN" id="nJn-9T-FAC"/>
+                <outlet property="indicatorView" destination="t2T-xD-hQl" id="qBh-8c-jVf"/>
                 <outlet property="textCode" destination="PSu-Ab-vlE" id="SFh-Zh-Smk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -30,16 +31,28 @@
                     <rect key="frame" x="16" y="488" width="382" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Узнать информацию"/>
+                    <connections>
+                        <action selector="tapOnActionButton:" destination="-1" eventType="touchUpInside" id="phg-tQ-9zr"/>
+                    </connections>
                 </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="t2T-xD-hQl">
+                    <rect key="frame" x="192" y="440" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="KP2-IN-tpZ"/>
+                        <constraint firstAttribute="height" constant="30" id="SPw-od-JP0"/>
+                    </constraints>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="t2T-xD-hQl" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="FM4-0b-NhR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PSu-Ab-vlE" secondAttribute="trailing" constant="15" id="G0h-52-7zE"/>
                 <constraint firstItem="6Hc-fT-gHN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="IL0-gD-yPF"/>
                 <constraint firstItem="PSu-Ab-vlE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="RYm-Kq-hrh"/>
                 <constraint firstItem="PSu-Ab-vlE" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="VgH-EB-L26"/>
                 <constraint firstItem="6Hc-fT-gHN" firstAttribute="top" secondItem="PSu-Ab-vlE" secondAttribute="bottom" constant="16" id="XDJ-hj-epp"/>
+                <constraint firstItem="t2T-xD-hQl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aes-8X-ffH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Hc-fT-gHN" secondAttribute="trailing" constant="16" id="bDy-bu-M2B"/>
                 <constraint firstItem="PSu-Ab-vlE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="dKc-Jw-ze0"/>
             </constraints>

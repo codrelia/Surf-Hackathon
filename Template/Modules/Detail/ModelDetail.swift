@@ -1,11 +1,11 @@
 import Foundation
+import UIKit
+
+enum Errors: Error {
+    case problemInBack
+}
 
 final class ModelDetail {
-    var info: Info? {
-        didSet {
-            
-        }
-    }
     
     enum URLs {
         static let barcode = "http://event.surfstudio.ru:8082/led/barcode/"
@@ -13,6 +13,7 @@ final class ModelDetail {
     
     func takeRequest(header: String, completion: @escaping (Result<Info, Error>) -> ()) {
         guard let url = URL(string: URLs.barcode + header) else {
+            completion(.failure(Errors.problemInBack))
             return
         }
         URLSession.shared.dataTask(with: url) { data, _, error in
@@ -21,6 +22,7 @@ final class ModelDetail {
                 return
             }
             guard let parsed = try? JSONDecoder().decode(Info.self, from: data) else {
+                completion(.failure(Errors.problemInBack))
                 return
             }
             completion(.success(parsed))
@@ -28,13 +30,16 @@ final class ModelDetail {
     }
 }
 
+// MARK: - Info
 struct Info: Codable {
     let image: String
-    let model, brand: String
-    let rating: Int
-    let temp, brightness, usage, power: Brightness
+    let model, brand: String?
+    let rating: Double?
+    let life, price, voltage: String?
+    let temp, brightness, usage, power: Brightness?
 }
 
+// MARK: - Brightness
 struct Brightness: Codable {
-    let declared, measured: String
+    let declared, measured: String?
 }
